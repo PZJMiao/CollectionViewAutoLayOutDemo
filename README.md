@@ -54,6 +54,7 @@
 }
 
 ```
+### 效果事例图如下：
 ![1](https://raw.githubusercontent.com/PZJMiao/CollectionViewAutoLayOutDemo/master/screenshot/1.png)
 ![2](https://github.com/PZJMiao/CollectionViewAutoLayOutDemo/blob/master/screenshot/2.png)
 
