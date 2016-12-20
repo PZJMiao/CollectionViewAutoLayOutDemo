@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TextAndImageCell">
+            <rect key="frame" x="0.0" y="0.0" width="268" height="206"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="268" height="206"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tfy-vm-xkV">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="128" placeholderIntrinsicHeight="107" translatesAutoresizingMaskIntoConstraints="NO" id="GgY-hq-JZQ"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="239" translatesAutoresizingMaskIntoConstraints="NO" id="YN1-SY-OCp">
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.99607843139999996" green="0.83921568629999999" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="YN1-SY-OCp" firstAttribute="leading" secondItem="Tfy-vm-xkV" secondAttribute="leading" id="5NY-Uc-TnF"/>
+                <constraint firstItem="GgY-hq-JZQ" firstAttribute="top" secondItem="Tfy-vm-xkV" secondAttribute="bottom" constant="10" id="Fbr-hl-1HR"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Tfy-vm-xkV" secondAttribute="trailing" constant="10" id="GDP-u0-JyB"/>
+                <constraint firstAttribute="trailing" secondItem="YN1-SY-OCp" secondAttribute="trailing" constant="8" id="R6A-dc-YHD"/>
+                <constraint firstItem="GgY-hq-JZQ" firstAttribute="leading" secondItem="Tfy-vm-xkV" secondAttribute="leading" id="RGB-cI-9kk"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="GgY-hq-JZQ" secondAttribute="trailing" constant="10" id="UfA-Dv-6I6"/>
+                <constraint firstItem="Tfy-vm-xkV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="12" id="fYL-Dn-uXQ"/>
+                <constraint firstItem="YN1-SY-OCp" firstAttribute="top" secondItem="GgY-hq-JZQ" secondAttribute="bottom" constant="5" id="mzx-Xc-jry"/>
+                <constraint firstItem="Tfy-vm-xkV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="13" id="r6G-hH-UUA"/>
+                <constraint firstAttribute="bottom" secondItem="YN1-SY-OCp" secondAttribute="bottom" constant="10" id="s7J-8L-MdK"/>
+            </constraints>
+            <size key="customSize" width="268" height="206"/>
+            <connections>
+                <outlet property="contentLabel" destination="YN1-SY-OCp" id="Ymy-Rv-12G"/>
+                <outlet property="img" destination="GgY-hq-JZQ" id="9pd-xF-8gG"/>
+                <outlet property="titleLabel" destination="Tfy-vm-xkV" id="amN-6s-Hqi"/>
+            </connections>
+            <point key="canvasLocation" x="33" y="48"/>
+        </collectionViewCell>
+    </objects>
+</document>
