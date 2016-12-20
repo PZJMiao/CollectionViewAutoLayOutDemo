@@ -133,17 +133,17 @@ static NSString* const TYPE_IMAGE = @"ImageCell";
     NSString *type = [self getType];
     LayoutModel *model = self.dataArray[indexPath.row];
     CGFloat width;
-    if (type == TYPE_TEXTANDIMG) {
+    if (type == TYPE_TEXTANDIMG) {//图文
         width = SCREEN_WIDTH-20;
         return [collectionView ar_sizeForCellWithIdentifier:type indexPath:indexPath fixedWidth:width configuration:^(__kindof id cell) {
             [cell filleCellWithFeed:model];
         }];
-    }else if(type == TYPE_TEXTLAYOUTHEIGHT){
+    }else if(type == TYPE_TEXTLAYOUTHEIGHT){//只有文字
         width = SCREEN_WIDTH;
         return [collectionView ar_sizeForCellWithIdentifier:type indexPath:indexPath fixedWidth:width configuration:^(__kindof id cell) {
             [cell filleCellWithFeed:model];
         }];
-    }else{
+    }else{//只有图片，可实现瀑布流
         return [collectionView ar_sizeForCellWithIdentifier:type indexPath:indexPath configuration:^(__kindof id cell) {
             [cell filleCellWithFeed:model];
         }];
