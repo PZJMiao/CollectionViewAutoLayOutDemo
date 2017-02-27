@@ -51,7 +51,7 @@
     self.view.backgroundColor = [UIColor yellowColor];
 //    self.navigationController.title = @"collection Layout";
     UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 44)];
-    title.text = @"homeasd";
+    title.text = @"homeasd12345";
     title.textAlignment = NSTextAlignmentCenter;
     title.textColor = [UIColor grayColor];
     title.font = [UIFont systemFontOfSize:16];
